@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #515076;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+ .product_card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+ }
+
+ .title { 
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 78px;
+    margin: 0;
+    text-align: center;
+    color: #515076;
+ }
+
+ .denomination h1 { 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #515076;
+}
+
+ li h2 { 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #A5A3B9;
+ }
+
+ .price { 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #515076;
+ }
+
+ .number { 
+    font-size: 20px;
+    line-height: 24px;
+    color: #515076;
+ }
+
+ .card { 
+    width: 340px;
+    border: 1px solid #EAEAF0;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+ }
+
+ ul { 
+    list-style-type: none;
+ }
