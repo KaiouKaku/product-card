@@ -39,16 +39,11 @@ body {
  }
 
  .price { 
-    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #515076;
- }
-
- .number { 
-    font-size: 20px;
-    line-height: 24px;
-    color: #515076;
  }
 
  .card { 
