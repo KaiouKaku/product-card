@@ -1,7 +1,7 @@
-function findWeather (city, temperature) {
-    console.log(`Сейчас в ${city} температура ${temperature} градусов по Цельсию.`);
+function showWeather(city, temperature) {
+    console.log(`Сейчас в ${city} температура — ${temperature} градусов по Цельсию.`);
 }
-findWeather("Moscow", 29)
+showWeather("Moscow", 29);
 
 const LIGHT_SPEED = 299792458;
 
@@ -24,7 +24,7 @@ function buyProduct(budget) {
     if (budget >= price)
         console.log('Арбуз приобретен.');
     else {
-        const notEnoughMoney = price - budget
+        const notEnoughMoney = price - budget;
         console.log(`Вам не хватает ${notEnoughMoney}$, пополните баланс.`);
     }
 }
@@ -33,7 +33,7 @@ buyProduct(10);
 
 const scales = 200;
 
-function cargoWeight(kg) {
+function showWeightCargo(kg) {
     if (kg < scales)
         console.log("Недовес.");
     else if (kg > scales)
@@ -41,6 +41,6 @@ function cargoWeight(kg) {
     else
         console.log("Подходящий вес.");
 }
-cargoWeight(100);
-cargoWeight(300);
-cargoWeight(200);
+showWeightCargo(100);
+showWeightCargo(300);
+showWeightCargo(200);
