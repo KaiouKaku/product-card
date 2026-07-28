@@ -35,27 +35,29 @@ getValueObject(carInfo, 'model');
 //№7 Создал массив с названиями продуктов.
 const listProducts = ['apple', 'pear', 'pineapple'];
 //№8 Создал массив из трех игр и запушил в конце еще одну.
-const listGames = [{
-    title: "World of warcraft",
-    yearManufacture: 2004,
-    developer: "Blizzard",
-    designer: "Rob Pardo",
-    genre: "MMORPG"
-},
-{
-    title: "Dota 2",
-    yearManufacture: 2013,
-    developer: "Valve",
-    designer: "Ice Frog",
-    genre: "MOBA"
-},
-{
-    title: "PUBG",
-    yearManufacture: 2017,
-    developer: "PUBG studios",
-    designer: "Brendan Greene",
-    genre: "Battle Royale"
-}];
+const listGames = [
+    {
+        title: "World of warcraft",
+        yearManufacture: 2004,
+        developer: "Blizzard",
+        designer: "Rob Pardo",
+        genre: "MMORPG"
+    },
+    {
+        title: "Dota 2",
+        yearManufacture: 2013,
+        developer: "Valve",
+        designer: "Ice Frog",
+        genre: "MOBA"
+    },
+    {
+        title: "PUBG",
+        yearManufacture: 2017,
+        developer: "PUBG studios",
+        designer: "Brendan Greene",
+        genre: "Battle Royale"
+    }
+];
 listGames.push({
     title: "Rust",
     yearManufacture: 2018,
@@ -65,27 +67,29 @@ listGames.push({
 });
 console.log(listGames);
 //№9 Создал массив из трех игр вселенной Warcraft и объеденил их с массивом из игр восьмого задания оператором.
-const warcraftGameUniverse = [{
-    title: "Warcraft: Orcs & Humans",
-    yearManufacture: 1994,
-    developer: "Blizzard",
-    designers: ["Ron Millar", "Stu Rose"],
-    genre: "RTS"
-},
-{
-    title: "Warcraft II: Tides of Darkness",
-    yearManufacture: 1995,
-    developer: "Blizzard",
-    designers: ["Bill Roper", "Chris Metzen", "Ron Millar"],
-    genre: "RTS"
-},
-{
-    title: "Warcraft III: Reign of Chaos",
-    yearManufacture: 2002,
-    developer: "Blizzard",
-    designers: ["Rob Pardo", "Chris Metzen", "Allen Adham"],
-    genre: "RTS" 
-}];
+const warcraftGameUniverse = [
+    {
+        title: "Warcraft: Orcs & Humans",
+        yearManufacture: 1994,
+        developer: "Blizzard",
+        designers: ["Ron Millar", "Stu Rose"],
+        genre: "RTS"
+    },
+    {
+        title: "Warcraft II: Tides of Darkness",
+        yearManufacture: 1995,
+        developer: "Blizzard",
+        designers: ["Bill Roper", "Chris Metzen", "Ron Millar"],
+        genre: "RTS"
+    },
+    {
+        title: "Warcraft III: Reign of Chaos",
+        yearManufacture: 2002,
+        developer: "Blizzard",
+        designers: ["Rob Pardo", "Chris Metzen", "Allen Adham"],
+        genre: "RTS" 
+    }
+];
 
 const allGames = [...warcraftGameUniverse, ...listGames];
 console.log(allGames);
