@@ -24,20 +24,20 @@ const findComment = userComments.filter(comment => comment.email.includes(".com"
 console.log(findComment);
 
 //№8 Создал новый массив из объектов, в котором первые 5 объектов будут иметь postId = 2, а остальные postId = 1.
-const updatedComments = userComments.map(comment =>
-    comment.id <= 5 ? { ...comment, postId: 2 } : { ...comment, postId: 1 }
-);
-console.log(updatedComments);
+const updatedComments = userComments.map(comment => ({
+    ...comment,
+    postId: comment.id <= 5 ? 2 : 1
+}));
 
 //№9 Создал новый массив из объектов, в котором будут только id и name.
-const shortUserComment = userComments.map ( comment => ({ id: comment.id, name: comment.name }));
+const shortUserComment = userComments.map(comment => ({ id: comment.id, name: comment.name }));
 console.log(shortUserComment);
 
 //№10 Создал новый массив из объектов, в котором будет новое свойство isInvalid, которое будет true, если длина body больше 180 символов, и false в противном случае.
-const sortingUserComments = userComments.map(comment =>
-    comment.body.length > 180 ? { ...comment, isInvalid: true } : { ...comment, isInvalid: false }
-);
-console.log(sortingUserComments);
+const sortingUserComments = userComments.map(comment => ({
+    ...comment,
+    isInvalid: comment.body.length > 180
+}));
 
 //№11 Перебрал массив с помощью метода reduce() и map(), в котором будет только email каждого комментария.
 const mailArrayReduce = userComments.reduce((acc, comment) => {
